@@ -17,39 +17,41 @@
         <p>How to use this website:</p><br><br>
         <p>This website is to help you pick the silo for you, while not going over your budget</p>
         <br><br>
-        <button type="button" class="collapsible">Start Here</button>
+        <button type="button" class="collapsible">Start Here (Prefereneces)</button>
         <div class="content">
             <br>
-            <p>How many Silos do you want? (1-4)</p>
-            <input type="text" id="SiloQuantity" Value = ""><br><br>
-
+            
             <p>What are you trying to store?</p>
-            <select name="GrainType" id="GrainType">
+            <select id="GrainType">
                 <option value="silage">silage</option>
                 <option value="grain">grain</option>
                 <option value="woodchips">woodchips</option>
-                <option value="foodproducts">food products</option>
-                <option value="foodproducts">water</option>
-                <option value="foodproducts">other or unsure</option>
+                <option value="water">water</option>
+                <option value="water">other or unsure</option>
             </select><br><br>
 
             <p>How much are you trying to store?</p>
             <input type="text" id="GrainQuantity" Value = "">
             <select id="GrainQuantityUnit">
                 <option value="ton">tons</option>
-                <option value="kilo-litre">kilo-litre</option>
                 <option value="cubic-meters">cubic-meters</option>
             </select><br><br>
 
             <p>What is your Budget? (For recommendation purposes)</p>
             <input type="text" id="CustomerBudget" Value = ""><br><br>
 
-            <input type="button" class="button" id="RecomendationButton" Value = "Recommend silo for me!"><br><br>
+            <input type="button" class="button" id="RecomendationButton" onclick="recommend()" Value = "Recommend silo for me!"><br><br>
         </div> 
 
         <button type="button" class="collapsible">Advanced Options</button>
         <div class="content">
             <br>
+            <p>Number of Silos: (1-4)</p>
+            <input type="text" id="SiloQuantity" Value = ""><br><br>
+            <p>Silo height (metres):</p>
+            <input type="text" id="SiloHeight" Value = ""><br><br>
+            <p>Silo Diameter (meters):</p>
+            <input type="text" id="SiloWidth" Value = ""><br><br>
             <input type="button" class="button" id="UpdateOptionsButton" Value = "Update Options"><br><br>
         </div>  
 
