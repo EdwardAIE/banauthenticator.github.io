@@ -1,0 +1,126 @@
+:root{
+    --Primary: rgb(113, 171, 222);
+    --Secondary:rgb(71, 129, 179);
+    --PrimaryBG: #d9e5ea;
+    --Primary-Font: rgb(15, 46, 73);
+    --Secondary-Font: rgb(149, 176, 199);
+    --body-fonts: "Helvetica", "Arial", sans-serif;
+
+
+}
+    
+body {
+    margin: 0px;
+    background-color: var(--PrimaryBG);
+    
+}
+
+header{
+    background-color: var(--Primary);
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    padding-left: 18px;
+}
+
+footer{
+    background-color: var(--Secondary);
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+}
+
+
+h1{
+    background-color: var(--Primary);
+    font-size: 20px;
+    color: var(--Primary-Fonts);
+    font-family: var(--body-fonts);
+}
+
+p {
+    display: inline;
+    font-size: 20px;
+    padding: 18px;
+    color: var(--Primary-Fonts);
+    font-family: var(--body-fonts);
+}
+
+
+.button {
+    background-color: var(--Primary);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color:rgb(15, 46, 73);
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 18px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: var(--body-fonts);
+    font-weight: bold;
+}
+
+.button:hover {
+background-color: var(--Secondary);
+}
+
+.Warning{
+    display: inline;
+    font-size: 12px;
+    padding: 18px;
+    color: var(--Secondary-Fonts);
+    font-family: var(--body-fonts);
+}
+
+ /* Style the button that is used to open and close the collapsible content */
+ .collapsible {
+    background-color: var(--Primary);
+    color: var(--Primary-Font);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: var(--body-fonts);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover {
+    background-color: var(--Secondary);
+  }
+
+.active{
+    background-color: var(--Primary);
+}
+  /* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0px;
+  background-color: var(--PrimaryBG);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-family: var(--body-fonts);
+  
+  } 
+
+  .top-down-preview{
+    float: left; 
+    width: 50%;
+  }
+
+  .front-preview{
+    float: left; 
+    width: 50%; 
+}

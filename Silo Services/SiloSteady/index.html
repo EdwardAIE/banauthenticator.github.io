@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Silo Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <header>
+        <h1>Silo Services Automatic Quote Estimator</h1>
+        </header><br>
+        <p>Welcome to the Silo Services Webiste!</p><br><br><br>
+        <p>How to use this website:</p><br><br>
+        <p>This website is to help you pick the silo for you, while not going over your budget</p>
+        <br><br>
+        <button type="button" class="collapsible">Start Here</button>
+        <div class="content">
+            <br>
+            <p>How many Silos do you want? (1-4)</p>
+            <input type="text" id="SiloQuantity" Value = ""><br><br>
+
+            <p>What are you trying to store?</p>
+            <select name="GrainType" id="GrainType">
+                <option value="silage">silage</option>
+                <option value="grain">grain</option>
+                <option value="woodchips">woodchips</option>
+                <option value="foodproducts">food products</option>
+                <option value="foodproducts">water</option>
+                <option value="foodproducts">other or unsure</option>
+            </select><br><br>
+
+            <p>How much are you trying to store?</p>
+            <input type="text" id="GrainQuantity" Value = "">
+            <select id="GrainQuantityUnit">
+                <option value="ton">tons</option>
+                <option value="kilo-litre">kilo-litre</option>
+                <option value="cubic-meters">cubic-meters</option>
+            </select><br><br>
+
+            <p>What is your Budget? (For recommendation purposes)</p>
+            <input type="text" id="CustomerBudget" Value = ""><br><br>
+
+            <input type="button" class="button" id="RecomendationButton" Value = "Recommend silo for me!"><br><br>
+        </div> 
+
+        <button type="button" class="collapsible">Advanced Options</button>
+        <div class="content">
+            <br>
+            <input type="button" class="button" id="UpdateOptionsButton" Value = "Update Options"><br><br>
+        </div>  
+
+        <button type="button" class="collapsible">Details</button>
+        <div class="content">
+          <div id="silo-default" style="display: none;"><br><p>No details here yet. Details about your silo will appear once you enter some details :)</p><br><br></div>
+          <div id="silo-details">
+            <br>
+            <p>Silo Type: </p><br><br>
+            <p>Material: </p><br><br>
+            <p>Storage Capacity: </p><br><br>
+            <p>Volume: </p><br><br>
+            <p>Silo Height: </p><br><br>
+            <p>Silo Diameter: </p><br><br>
+            <p>Foundation Diameter: </p><br><br>
+            </div>
+        </div> 
+
+        <button type="button" class="collapsible">Preview</button>
+        <div class="content">
+            <div class="previews">
+                <div class="top-down-preview" style="text-align: center;">
+                  <p style="text-align: center;">top-down-preview</p><br>
+                  <canvas style="background-color:green;">This is canvas</canvas> 
+                </div>
+                
+                <div class="front-preview" style="text-align: center;">
+                  <p style="text-align: center;">front-preview</p><br>
+                  <canvas style="background-color:yellow;">This is canvas</canvas> 
+                </div>
+                
+              </div>
+        </div>
+
+        <button type="button" class="collapsible">Quote Estimate Calculations</button>
+        <div class="content">
+            <div id="calculations-default" style="display: none;"><br><p>No Calculations here. Estimate a quote by clicking 'Recommend Silo' or 'Update Options' if everything is filled in</p><br><br></div>
+            <div id="calculations-details"><br>
+                
+                <p>Material Costs: </p><br><br>
+                <p>Material Transportation Costs: </p><br><br>
+                <br><br>
+                <p>Labor Fee (Per hour): </p><br><br>
+                <p>Estimated Work Time: hours</p><br><br>
+                <p>Total Labor costs: </p><br><br>
+
+                <p>Total Cost: </p><br><br>
+                <br><br>
+            </div>
+        </div> 
+
+        <button type="button" class="collapsible">Quote Estimate</button>
+        <div class="content">
+            <div id="calculations-default"><br><p>Can't estimate a quote for you until you choose a silo or silos that suit you</p><br><br></div>
+            <div id="calculations-details" style="display: none;">
+                <br>
+                <p>Total Estimate Cost: $</p>
+                <br><br>
+            </div> 
+        </div> 
+    
+    <!--
+    <canvas id="canvas"></canvas>
+    -->
+    <footer>
+    <br>
+    <p class="Warning">This site uses cookies to remember your choices.</p><br>
+    <p class="Warning">These cookies are stored locally on your computer. Silo Services can not see your data. No data is sent or stored by Silo Services</p><br></br>
+    <p class="Warning">If you are uncomfortable with these cookies, you can make them disapear forever by pressing 'eat cookies' :)</p><br>
+    <p class="Warning">(If you do this, your choices will not be remembered and you may have to fill this site out again to remember your quote)</p><br><br>
+    <button type="button" style="margin-left: 18px;" class="cookieMonster">Eat Cookies</button><br><br>
+    
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

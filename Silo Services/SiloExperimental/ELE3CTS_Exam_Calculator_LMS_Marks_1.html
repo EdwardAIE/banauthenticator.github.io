@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+	<h1>ELE3CTS EXAM CALCULATOR:</h1>
+	
+	<p>Please enter all of the grades for your assignments and labs a percentage</p>
+	<label for="Assignment1">Assignment 1 ( /75):</label>
+	<input type="text" id="Assignment1" name="Assignment1" Value = ""><br><br>
+	<label for="Assignment2">Assignment 2 ( /75):</label>
+	<input type="text" id="Assignment2" name="Assignment2"><br><br>
+	<label for="Lab1">Lab 1 ( /5):</label>
+	<input type="text" id="Lab1" name="Lab1"><br><br>
+	<label for="Lab1">Lab 2 ( /5):</label>
+	<input type="text" id="Lab2" name="Lab2"><br><br>
+	<label for="Lab3">Lab 3 ( /5):</label>
+	<input type="text" id="Lab3" name="Lab3"><br><br>
+	<button id="myBtn" onclick="Maths()">Calculate!</button>
+	
+	<h3 id="CurrentScore">Your current subject Percentage: %</h3>
+	<h3 id="ToPass">Exam Score Required to pass: %</h3>
+	<h3 id="For C">Exam Score Required for a C: %</h3>
+	<h3 id="For B">Exam Score Required for a B: %</h3>
+	<h3 id="For A">Exam Score Required for a A: %</h3>
+	<br></br>
+	<p>If it has a negative percentage then that grade is unachivable with your current marks </p>
+
+  <script>
+	function Maths(){
+	
+	var FirstAssignment = document.getElementById("Assignment1").value;
+	var SecondAssignment = document.getElementById("Assignment2").value;
+	var FirstLab = document.getElementById("Lab1").value;
+	var SecondLab = document.getElementById("Lab2").value;
+	var ThirdLab = document.getElementById("Lab3").value;
+	
+	var CurrentScore;
+	var ToPass;
+	var ForC;
+	var ForB;
+	var ForA;
+	
+	CurrentScore = (7.5)*(parseFloat(FirstAssignment)/75) + (7.5)*(parseFloat(SecondAssignment)/75) + (25/3)*(parseFloat(FirstLab)/5) + (25/3)*(parseFloat(SecondLab)/5) + (25/3)*(parseFloat(ThirdLab)/5);
+	ToPass = ((50 - CurrentScore)/60) * 100;
+	ForC = ((60 - CurrentScore)/60) * 100;
+	ForB = ((70 - CurrentScore)/60) * 100;
+	ForA = ((80 - CurrentScore)/60) * 100;
+	
+	document.getElementById("CurrentScore").innerHTML = ("Your current subject Percentage: " +CurrentScore+ "%");
+	document.getElementById("ToPass").innerHTML = ("Exam Score Required to pass: " +ToPass+ "%");
+	document.getElementById("For C").innerHTML = ("Exam Score Required to get a C: " +ForC+ "%");
+	document.getElementById("For B").innerHTML = ("Exam Score Required to get a B: " +ForB+ "%");
+	document.getElementById("For A").innerHTML = ("Exam Score Required to get an A: " +ForA+ "%");
+	
+	//alert("Calculations completed");
+	
+	}
+  </script>
+</body>
+</html>

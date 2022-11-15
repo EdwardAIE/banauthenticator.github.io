@@ -1,0 +1,62 @@
+Caitlin's Message:
+
+    we also have silo services - a farm silo building company 
+
+    - we will be focusing on the features of a new system that will allow their customers 
+    to come up with a rough plan for their silos with rough quote before they discuss 
+    directly with stuff. (that will be a full day on the 16th of Nov)
+
+    -Rough plan
+    -Rough quote
+
+
+My Solution:
+
+    A website that will allow a user to put in parameters, veiw a preview of the silos
+    and the approximate cost
+
+What is a Silo? (Can also be called grain bins)
+
+    (from: https://www.ukfrs.com/promos/17115)
+
+    A silo is a structure for storing bulk materials. Silos are used in agriculture to store grain, powders, fermented feed (known as silage) and animal slurry.
+
+    Silos are used by other industries for bulk storage of coal, cement, sand, woodchips, metal waste, food products and sawdust. Silos range in height from around 10m to 90m with a capacity of 20 to 80 tons.
+
+    Different types of silos include:
+
+        Sealed silos - used to protect the contents from damp and insects
+        Silo bags - made from a waterproof and UV-protecting film
+        Aerated silos - designed for fine powders; by pumping air into the silo it causes the powder to act as a fluid
+
+    Reference to how Silos are built (https://www.youtube.com/watch?v=ywBV6M7VOFU)
+
+
+Personal Requirements
+
+
+
+    -Quote ID
+
+Parameters:
+
+    How many Silos
+
+    Storage capacity
+    Space Occupancy
+
+
+Costs:
+    Labor
+    Transport
+    Travel
+    Materials
+
+
+
+
+
+Step 1:
+Make a nice looking website
+
+Step 2: Create a page to create a Silo
